@@ -1,0 +1,150 @@
+###############################################
+# ARCHIVOS SENSIBLES
+###############################################
+.env
+.env.*
+!.env.example
+
+###############################################
+# COMPOSER
+###############################################
+vendor/
+composer.phar
+composer.lock
+
+###############################################
+# CACHE / LOGS (CUALQUIER LUGAR)
+###############################################
+**/cache/
+**/logs/
+**/*.log
+**/*.cache
+**/*.tmp
+**/*.temp
+
+###############################################
+# ARCHIVOS TEMPORALES DEL SISTEMA
+###############################################
+# macOS
+.DS_Store
+__MACOSX/
+
+# Windows
+desktop.ini
+Thumbs.db
+
+# Linux / NFS
+.nfs*
+
+###############################################
+# EDITORES / IDEs
+###############################################
+# VSCode
+.vscode/
+*.code-workspace
+
+# PhpStorm
+.idea/
+*.iml
+
+###############################################
+# EMACS — ARCHIVOS TEMPORALES, BACKUPS, LOCKFILES, ETC.
+###############################################
+
+# Backups (~)
+*~
+
+# Auto-save (#archivo#)
+\#*\#
+
+# Lockfiles
+*.lock~
+
+# Tramp (remote editing)
+.tramp
+
+# Byte-compiled Lisp
+*.elc
+
+# Desktop sessions
+**/.emacs.desktop
+**/.emacs.desktop.lock
+
+# Auto-save lists
+**/auto-save-list/
+
+# Org-mode metadata
+**/.org-id-locations
+**/.org-agenda.lock
+
+# Transient state (Magit, etc.)
+**/transient/history/
+**/transient/state/
+
+# URL cache
+**/url/cache/
+
+# esh-help
+**/esh-help/
+
+# Projectile
+.projectile
+
+###############################################
+# TREE-SITTER (archivos generados o compilados)
+###############################################
+# Árboles almacenados en caché por Emacs
+**/tree-sitter/**
+**/tree-sitter-cache/**
+**/.ts-cache/
+
+# Archivos binarios generados por grammars
+*.so
+*.dylib
+*.dll
+*.wasm
+*.bundle
+
+###############################################
+# AUCTeX (LaTeX temporales, aux, logs, etc.)
+###############################################
+*.aux
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+*.out
+*.toc
+*.bbl
+*.blg
+*.brf
+*.ilg
+*.ind
+*.idx
+*.maf
+*.mtc*
+*.nav
+*.snm
+*.vrb
+*.xdv
+*.pdfsync
+
+# Directorios temporales de TeX
+**/_minted*/
+**/texput.log
+**/latex.out/
+**/latex.cache/
+
+###############################################
+# TESTS / COVERAGE
+###############################################
+coverage/
+.phpunit.result.cache
+
+###############################################
+# BUILDS / ARTIFACTOS
+###############################################
+build/
+dist/
+node_modules/
+# AI Manifest
+ai-manifest/
